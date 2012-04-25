@@ -8,7 +8,6 @@ socialScore.friends = 0;
 socialScore.followers=0;
 socialScore.retweet_reach = 0;
 socialScore.callback = function (){
-	//window.console.log ("No callback set for social score");
 }
 
 socialScore.addMentions = function (mentions, allMentions){
