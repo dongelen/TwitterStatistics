@@ -49,9 +49,9 @@
 	    STATISTICS_RETWEETED_OF_MAX = socialScore.retweetAllFactor;
 		
       $('#social_score').html(socialScore.score);
-      $('#retweet_retweets').html(socialScore.retweetOthersPercentage);
-      $('#retweet_retweeted').html(socialScore.retweetsOfUserPercentage);
-      $('#retweet_amount').html(socialScore.retweetsOfReach);
+      $('#retweet_retweets').html(socialScore.retweetOthersPercentage + "%");
+      $('#retweet_retweeted').html(socialScore.retweetsOfUserReach + " X");
+      $('#retweet_amount').html(socialScore.seekContactPercentage + "%");
 
 	  
       FRIENDS = socialScore.mostMentioned;

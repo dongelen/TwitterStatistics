@@ -147,8 +147,9 @@ socialScore.timelineFetched = function (t) {
     socialScore.retweetAllPercentage = socialScore.savePercentage(numberOfTweetsRetweeted,numberOfOwnTweets);
 
     socialScore.seekContactFactor = socialScore.saveDiv(seekContact,numberOfOwnTweets);
+    socialScore.seekContactPercentage = socialScore.savePercentage(seekContact,numberOfOwnTweets);
 
-    socialScore.retweetsOfUserReach= socialScore.saveDiv(ownRetweetCount, numberOfTweetsRetweeted);
+    socialScore.retweetsOfUserReach= socialScore.saveDiv(ownRetweetCount, numberOfTweetsRetweeted).toFixed(2);
     socialScore.retweetsOfUserPercentage = socialScore.savePercentage(numberOfTweetsRetweeted,numberOfOwnTweets);
     socialScore.retweetsOfUserFactor = socialScore.saveDiv(numberOfTweetsRetweeted,numberOfOwnTweets);
 
